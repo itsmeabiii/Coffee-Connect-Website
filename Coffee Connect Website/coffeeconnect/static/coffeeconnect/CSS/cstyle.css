@@ -1,0 +1,238 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.main{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/bg-image.jfif);
+	background-position: center;
+	background-size: cover;
+	padding-left: 15%;
+	padding-right: 10%;
+	box-sizing: border-box; ;  
+}
+
+.navbar{
+	height: 12%;
+	display: flex;
+	align-items: center;
+}
+
+.logo{
+	width: 60px;
+	cursor: pointer;
+	padding-top: 1%;
+}
+
+nav{
+	flex: 1;
+	text-align: right;
+}
+
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 50px;
+}
+
+nav ul li a{
+	color: #ffffff;
+	padding: 6px 15px;
+	text-decoration: none;
+	font-size: 15px;
+	border-radius: 30px;
+}
+
+nav ul li a:hover{
+	background: #ffffff;
+	color: #1a0d00;
+	text-decoration: none;
+}
+
+.button1, .button2{
+	width: 180px;
+	color: #1a0d00;
+	font-weight: bolder;
+	font-size: 15px ;
+	padding: 9px 15px;
+	background:#ffffff;
+	border-radius: 5px;
+	outline: none;
+	text-decoration: none;
+	box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.75);
+	transition: 0.4s;
+
+}
+
+.button1:hover{
+	background: #ffcc33;
+	color: #ffff;
+}
+
+.button2:hover{
+	background: #604020;
+	color: #ffff;
+}
+
+.content{
+	display: flex;
+	height: 88%;
+	align-items: center;
+}
+
+h1{
+	color: #ffff;
+	font-size: 50px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.column{
+	flex-basis: 50%;
+	margin-top: 5%;
+}
+
+.column p{
+	color: #ffff;
+	font-style: italic;
+	font-size: 17px;
+	line-height: 15px;
+	margin-bottom: 35px;
+}
+
+.card{
+	width: 200px;
+	height: 220px;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 8px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin-left: 10px;
+	margin-bottom: 15px;
+	background-position: center;
+	background-size: cover;
+	transition: transform 0.5s; 
+}
+
+.card1{
+
+	background-image: url(../images/frappe.jpg);
+}
+.card2{
+
+	background-image: url(../images/freeze.jfif);
+}
+.card3{
+
+	background-image: url(../images/raspberry.jfif);
+}
+.card4{
+
+	background-image: url(../images/carbonara.jpg);
+}
+
+.card:hover{
+	transform: translateY(-10px);
+}
+
+h5{
+	color: #ffff;
+	text-shadow: 0 0 5px #999;
+	font-size: 20px;
+	font-family: 'Poppins', sans-serif;
+}
+
+.card p{
+
+	color: #ffff;
+	text-shadow: 0 0 15px #000;
+	font-size: 15px;
+	font-style: normal;
+}
+
+.bg-modal{
+	width: 100%;
+	height:	100vh;
+	background-color: rgba(0,0,0,0.6);
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+
+.modal-content{
+	width: 540px;
+	height: 400px;
+	background-color: #F3EFCC;
+	border-radius: 4px;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+}
+
+.coffee_form, .login_form{
+	width: 65px;
+	cursor: pointer;
+	padding-left: 10px;
+	margin-left: 200px;
+}
+
+.form h5{
+	color: #662900;
+	font-size: 20px; 
+	padding: 10px;
+}
+
+.form p{
+	font-size: 17px;
+	margin-left: 15px; 
+	text-align: left;
+	padding: 5px;
+}
+
+input[type="orderdets"], input[type="text"], input[type = "password"], input[type = "email"]{
+	width: 70%;
+	display: block;
+	margin: 15px auto;
+	padding: 5.5px;
+	outline: none;
+	transition: .3s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type = "email"]:focus{
+	border-color: #197bd8;
+	box-shadow: 0 0 6px 0 #197bd8;
+}
+
+input[type="orderdets"]:focus{
+	border-color: #662900;
+	box-shadow: 0 0 6px 0 #662900;
+}
+
+.close_but{
+	position: absolute;
+	top: 0;
+	right: 14px;
+	font-size: 42px;
+	transform: rotate(45deg);
+	cursor:pointer;
+}
+
+.options{
+	margin-bottom: 2%;
+}
+
+.options label{
+	font-size: 18px;
+	padding: 10px;
+}
+
+.content-section {
+	background-color: rgba(0,0,0,0.6);
+	padding: 15px;
+}
